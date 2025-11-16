@@ -7,6 +7,7 @@ The model is designed to estimate dementia risk (0-100%) based on self-reported 
 ## 📦 Dataset
 
 The model is trained on the `Dementia Prediction Dataset.csv`.
+Dataset Download Link : https://drive.google.com/file/d/1AtCCUDv8hGgmEUkUkMKNSKSO2qRoLmFE/view?usp=sharing
 
 This is a longitudinal dataset containing **195,196 total visits** from **52,537 unique participants**. A key challenge and feature of this project is handling this data structure correctly.
 
@@ -18,8 +19,8 @@ To set up this project locally, follow these steps:
 
 1.  Clone this repository:
     ```sh
-    git clone [User: Paste Your GitHub Repo Link Here]
-    cd [your-repo-name]
+    git clone https://github.com/vibodhalakshan2004/Dementia-Prediction-Model-Notebook
+    cd Dementia-Prediction-Model-Notebook
     ```
 2.  Create and activate a virtual environment (recommended):
     ```sh
@@ -69,11 +70,11 @@ The primary evaluation metric is **ROC-AUC**, which is ideal for imbalanced clas
 
 | Model | Validation AUC | Test AUC |
 | :--- | :--- | :--- |
-| Random Forest | [User: Insert RF Val AUC] | [User: Insert RF Test AUC] |
-| XGBoost | [User: Insert XGB Val AUC] | [User: Insert XGB Test AUC] |
-| CatBoost | [User: Insert CatBoost Val AUC] | [User: Insert CatBoost Test AUC] |
-| LightGBM | [User: Insert LGBM Val AUC] | [User: Insert LGBM Test AUC] |
-| **Stacking Ensemble** | **[User: Insert Stack Val AUC]** | **[User. Insert Stack Test AUC]** |
+| Random Forest | 0.9344 | 0.9334 |
+| XGBoost | 0.9369 | 0.9353 |
+| CatBoost | 0.9377| 0.9367 |
+| LightGBM | 0.9382 | 0.9362 |
+| **Stacking Ensemble** | **0.9383** | **0.937** |
 
 The **Stacking Ensemble** was selected as the final model due to its superior performance, effectively combining the strengths of all four base models.
 
